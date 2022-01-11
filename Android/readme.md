@@ -60,6 +60,13 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 ---
 ### 问题1
 - Google map 相关
+> 此题为代码相关面试题，UI美观会加分，但是基础样式的UI并不是减分项 
+- 根据下面两张图完成相关demo，必须包含的功能有
+    - 使用Google map sdk开发的可交互地图
+    - 地图上添加一些marker
+    - 点击marker可以弹出图二中底部的浮层，展示可左右滚动切换的视图，渲染内容相关的json在此项目的data.json中
+![图1](https://user-images.githubusercontent.com/8005462/148961728-141ac74b-2814-477d-bd86-3e5a44e4287b.png)
+![图2](https://user-images.githubusercontent.com/8005462/148961361-aebc3563-82ac-4505-8cd5-19252fb9b7f8.png)
 
 
 ---
