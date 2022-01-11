@@ -58,8 +58,7 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 - 有什么想问的问题？
 
 ---
-### 问题1
-- Google map 相关
+### 问题1 Google map 相关
 > 此题为代码相关面试题，UI美观会加分，但是基础样式的UI并不是减分项 
 - 根据下面两张图完成相关demo，必须包含的功能有
     - 使用Google map sdk开发的可交互地图
@@ -72,3 +71,26 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 ---
 ### 问题2
 - TBD
+
+---
+### 问题3
+- TBD
+
+---
+### 问题4 用户在实际使用App的过程中偶尔会出现Crash的情况
+- 我们应该如何知晓Crash的信息，分享你实际处理过的方案。
+- 同时我们又可以进行那些处理，以保证用户有最佳的体验。
+
+#### 4.2
+- H5混编app报以下崩溃错误，应该怎样处理？
+```
+Caused by java.lang.RuntimeException
+Using WebView from more than one process at once with the same data directory is not supported. https://crbug.com/558377 
+```
+
+
+---
+### 问题5
+- 你认为App绘制的关键性能指标是哪些，分别应该如何获取与监测？
+
+
