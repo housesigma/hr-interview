@@ -68,7 +68,7 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 
 
 ---
-### 问题2 请描述一下你对Android App Bundle
+### 问题2 请描述一下你对Android App Bundle的理解
 - 
 
 ---
