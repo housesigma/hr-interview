@@ -106,9 +106,26 @@ Caused by java.lang.RuntimeException
 Using WebView from more than one process at once with the same data directory is not supported. https://crbug.com/558377 
 ```
 
+---
+### 问题5 夜间模式
+很多信息类的APP都有夜间和白天阅读模式。我们的用户主要的使用时间也集中在夜间。如何实现像【知乎app】那样，可以让用户切换阅读模式？
+- Auto（跟随系统设置）
+- 白天 （不跟随系统设置）
+- 夜间 （不跟随系统设置）
+- 
+#### 5.1 补充问题：
+- 如果app里面用了webview，如何让 webview 的昼夜状态跟随app的3种状态？
+
+webview测试范例页面（不修改html内容是否可实现？） https://test.housesigma.com/static/dark_test.html
+- html 里面用了 @media screen and (prefers-color-scheme: dark) 自适应夜间模式
+
+- 答案格式：
+  - 上传代码片段
+  - 解释原理，对应的文档链接
+  - 自己真机调试通过或者上传apk
 
 ---
-### 问题5
+### 问题6
 - 你认为App绘制的关键性能指标是哪些，分别应该如何获取与监测？
 
 
