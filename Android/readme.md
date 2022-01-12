@@ -8,7 +8,7 @@
 ```
 To: reed（at）housesigma.com
 cc: yuerengui（at）housesigma.com, tanwei（at）housesigma.com
-Subject: PHP开发面试问卷回复 （姓名，城市）
+Subject: Android开发面试问卷回复 （姓名，城市）
 ```
 
 ---
@@ -61,11 +61,16 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 ### 问题1 Google map 相关
 > 此题为代码相关面试题，UI美观会加分，但是基础样式的UI并不是减分项 
 - 根据下图完成相关demo，必须包含的功能有
-    - 使用Google map sdk开发的可交互地图
-    - 在地图指定坐标上放置3个marker，marker图标自拟，marker坐标为：{lat: 49.2603236, lon: -123.1195774}，{lat: 49.23315, lon: -123.08884}，{lat: 49.26063, lon: -123.1966}
-    - 点击marker可以弹出下图中底部的浮层，展示可左右滚动切换的视图，渲染内容相关的json在此项目的data.json中
+    - 使用Google map sdk开发可交互地图
+    - 在地图指定坐标上放置marker
+    - 点击marker可以弹出下图中底部的浮层，展示可左右滚动切换的视图
+- 渲染内容相关的数据在 mapdata.json 中
+- 兼容安卓版本>=9
 ![图2](https://user-images.githubusercontent.com/8005462/148961361-aebc3563-82ac-4505-8cd5-19252fb9b7f8.png)
 
+**答案格式**
+- 源代码上传github（或者打包）
+- 编译好的 apk
 
 ---
 ### 问题2 请描述一下你对Android App Bundle的理解
