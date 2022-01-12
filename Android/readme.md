@@ -64,7 +64,7 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
     - 使用Google map sdk开发可交互地图
     - 在地图指定坐标上放置marker
     - 点击marker可以弹出下图中底部的浮层，展示可左右滚动切换的视图
-- 渲染内容相关的数据在 mapdata.json 中
+- 渲染内容相关的数据在 mapdata.json 中 https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
 - 兼容安卓版本>=9
 
 ![图2](https://user-images.githubusercontent.com/8005462/148961361-aebc3563-82ac-4505-8cd5-19252fb9b7f8.png)
