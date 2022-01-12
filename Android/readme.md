@@ -66,6 +66,7 @@ Android App: https://play.google.com/store/apps/details?id=com.housesigma.androi
 - 渲染内容相关的数据在 mapdata.json 中 https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
 - 兼容安卓版本>=9
 
+(以下为示意图，截取自友商app，无关的UI组件无需实现)
 ![图2](https://user-images.githubusercontent.com/8005462/148961361-aebc3563-82ac-4505-8cd5-19252fb9b7f8.png)
 
 **答案格式**
