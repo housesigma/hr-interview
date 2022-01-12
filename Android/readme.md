@@ -24,7 +24,6 @@ HouseSigma（房智汇）是面向加拿大-多伦多购房者的投资买房利
 移动版网站：https://housesigma.com/app/    
 iOS App：https://itunes.apple.com/ca/app/housesigma-toronto-sold-price/id1255490256?mt=8    
 Android App: https://play.google.com/store/apps/details?id=com.housesigma.android&hl=en_CA    
-Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk    
 
 ---
 ### 工作时间安排
@@ -128,4 +127,5 @@ webview测试范例页面（不修改html内容是否可实现？） https://tes
 ### 问题6
 - 你认为App绘制的关键性能指标是哪些，分别应该如何获取与监测？
 
-
+---
+### 问题7 在看过房智汇现在的app之后，对于把这个app改造为原生应用觉得有哪些难点？
