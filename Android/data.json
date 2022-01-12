@@ -8,6 +8,7 @@
       "sqft": 111
     },
     "address": "4 - 1182 7TH AVENUE W",
+    "location": {"lat": 49.2238816, "lon": -122.9110533},
     "photo": "https://cache-w11.housesigma.com/file/pix-rebgv/262658608/acac0_1.jpg?1dcd5682",
     "status": "sale"
   },
@@ -21,6 +22,7 @@
       "sqft": 134
     },
     "address": "102 - 825 15TH AVENUE W",
+    "location": {"lat": 49.2036649, "lon": -122.9084825},
     "photo": "https://cache-w11.housesigma.com/file/pix-rebgv/262659760/72ae7_1.jpg?f6104fbe",
     "status": "sale"
   },
@@ -33,6 +35,7 @@
       "sqft": 111
     },
     "address": "606 - 587 7TH AVENUE W",
+    "location": {"lat": 49.2079917, "lon": -122.9140894},
     "photo": "https://cache-w13.housesigma.com/file/pix-rebgv/262658326/0f67c_1.jpg?51838036",
     "status": "sold"
   },
@@ -46,6 +49,7 @@
       "sqft": 140
     },
     "address": "207 - 688 12TH AVENUE W",
+    "location": {"lat": 49.2080851, "lon": -122.9218253},
     "photo": "https://cache-w11.housesigma.com/file/pix-rebgv/262659228/302ab_1.jpg?4aae8dce",
     "status": "sale"
   }
