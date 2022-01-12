@@ -73,8 +73,9 @@ Android App: https://play.google.com/store/apps/details?id=com.housesigma.androi
 - 编译好的 apk
 
 ---
-### 问题2 请描述一下你对Android App Bundle的理解
-- 
+### 问题2 
+#### 2.1 请描述一下你对Android App Bundle的理解
+#### 2.2 你认为App绘制的关键性能指标是哪些，分别应该如何获取与监测？
 
 ---
 ### 问题3
@@ -124,8 +125,4 @@ webview测试范例页面（不修改html内容是否可实现？） https://tes
   - 自己真机调试通过或者上传apk
 
 ---
-### 问题6
-- 你认为App绘制的关键性能指标是哪些，分别应该如何获取与监测？
-
----
-### 问题7 在看过房智汇现在的app之后，对于把这个app改造为原生应用觉得有哪些难点？
+### 问题6 在看过房智汇现在的app之后，对于把这个app改造为原生应用觉得有哪些难点？
