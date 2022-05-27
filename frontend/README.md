@@ -85,7 +85,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 ---
 ### 面试问题3
 
-
+设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
 
 ---
 ### 面试问题4  - pagespeed
