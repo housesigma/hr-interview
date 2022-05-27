@@ -88,8 +88,12 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 2. 使用脚手架实现下面的页面
    - 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
    - 地图数据：https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
+     - 地图使用Google Map，测试Key请在邮件中查收
+     - 数据中的地址在 加拿大-温哥华
    - 需求说明：
-     - 按照设计稿实现所有的UI，地图使用Google Map，测试Key请在邮件中查收
+     - 按照设计稿实现所有的UI
+       - 必须完成：加载地图，标记，filter 菜单
+       - *可不完成：导航条，搜索框，watch按钮
      - 地图上根据提供的地图数据，显示标记
      - 【黄标1】筛选功能，只需要实现Filters按钮的功能
      - 【黄标2】多选，点击Any 清除其它选项
@@ -98,7 +102,8 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 点击clear按钮，清除所有选项，填充默认值
      - 点击apply按钮，隐藏filters弹窗，并在地图页上显示一个alert,显示接收到apply事件（alert内容可以简单写 “已完成过滤” 之类的就可以）。
      - 筛选的值保存状态到Pinia Store中，并同步更新到本地localstore或者indexdb作持久化存储，刷新页面后从本地存储取值填充回Pinia中，同步更新UI。
-
+   - 
+     - 导航条上的
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
 
 ---
