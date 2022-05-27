@@ -1,3 +1,10 @@
+### 招聘流程：
+
+![image](https://user-images.githubusercontent.com/16353524/170626922-8e3c0586-ca47-4398-bbc6-fdd13c9fad5b.png)
+
+如果没有重大变化，我们就只看问卷答案。不会在语音面试前另外联络申请人。
+
+--- 
 # HouseSigma 前端开发面试问卷。
 
 - 在5天内尽量完成，如果时间安排有冲突，请告知完成时间
@@ -48,7 +55,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 
 #### 公司业务背景：
 HouseSigma（房智汇）是面向加拿大-多伦多购房者的投资买房利器。
-- 提供过去15年的房屋成交历史和价格。
+- 提供过去16年的房屋成交历史和价格。
 - 多种数据图表
 - 提供买卖房经纪服务
 活动用户量，月pv 同行业排名前3（多伦多地区）。
@@ -71,9 +78,10 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 - 团队会议时间外，平时的工作日打算怎么安排时间？
 - 有什么想问的问题？
 
+
 ---
 ### 面试问题1
-用vue.js，angular（或类似框架）开发的SPA，运行时发现浏览器报告内存使用过高。
+用vue.js，angular（或类似框架）开发的SPA，运行时发现浏览器报告内存使用过高。很多iPhone X，XS 用户反馈使用时间长了容易崩溃
 - 怎样调试判断是否有内存泄漏？
 - 如果是内存泄漏通过哪些手段修复？
 - 如果不是内存泄漏怎么办？
@@ -82,16 +90,67 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 
 ---
 ### 面试问题2
-如何在web前端项目实现A，B测试？
-- 包括但不限于：项目部署，设置衡量指标，观察统计结果。
+
 
 
 ---
-### 面试问题3
+### 面试问题3 - Vue3 & Typescript
 
+3.1 Vue3.0 为什么要采用 Composition Api ，它与 Vue2.x 使用的 Options Api 有什么不同？
+
+3.2 什么是Proxy， 为什么Vue 3会使用Proxy API ?
+
+3.3 为什么要使用Typescript？ 使用Typescript能带来什么好处？ Vue 3结合typescript，在实际使用过程中，有什么优势或者不足的地方？
+
+3.4 Typescript 有哪些高级类型？ 什么样的场景下需要用到这些高级类型？（只需挑选一两个类型进行说明）
+
+3.5 如果让你从0开始架构一个vue3项目，你会怎么选择你的技术栈，比如说，Typescript， 状态管理，路由之类，说说你的理由, 能不能基于你的选择，搭建一个helloword 脚手架（请提供示例源码）。
+
+3.6 有一个项目，需要进行多端开发（桌面端、移动端），采用同一套后端API，前端决定使用vue 的情况下，如果才能最大化的做到代码复用？ 业界有没有什么成熟的方案？ 
 
 
 
 ---
 ### 面试问题4  - pagespeed
+页面速度有2方面的考虑：
+- 用户体验
+- SEO
+
+慢的页面不但影响用户，也会影响SEO排名。以下列出了我们的网站和竞品
+```
+桌面端
+https://housesigma.com/web/
+https://housesigma.com/web/en/house/aQmD7zn0LEM7J9Bo/10-Connaught-Ave-London-N5Y3A3-X5634582
+手机端
+https://housesigma.com/app/
+https://housesigma.com/app/en/listing/aQmD7zn0LEM7J9Bo/10-Connaught-Ave-London-N5Y3A3-X5634582
+```
+```
+竞品
+https://www.zolo.ca/oakville-real-estate/467-hedgerow-lane
+https://www.redfin.ca/on/toronto/116-Wheeler-Ave-M4L-3V2/home/151707805
+```
+
+1. 有哪些地方我们的网站做的不好，需要改善？
+1.1 哪些问题是影响用户体验的，哪些是影响SEO的？
+
+
+2. 为了得到以上答案，使用了什么页面速度调试和报告工具？
+2.1 为什么要使用这个（些）工具？
+2.2 不同的测试指标有什么意义？
+
+3. 需要怎样改善？
+
+注1: 我们面向的是加拿大用户，暂不考虑中国大陆地区用户的访问体验。测试结果以海外版为基准。
+注2: HouseSigma网站从中国IP访问，和用海外IP访问，是不一样的服务器。（GeoDNS）
+一般使用海外的测试网站（ https://pagespeed.web.dev/ ）， 测的是我们北美服务器（机器快，带宽大）
+如果从中国运行测试（Chrome dev），访问的是我们的亚洲镜像（带宽小）
+
+#### 答案格式
+- 请尽量完整的介绍解决思路, 有可能的排查方向|手段, 如果使用到某些工具也请一并列出
+
+---
+### 面试问题5 
+如何在vue前端项目实现A/B测试？
+- 常用的工具，框架，部署方法
 
