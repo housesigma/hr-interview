@@ -85,9 +85,9 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
    2. 包含状态管理、路由等基础功能
 2. 使用脚手架实现下面的页面
    - 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
-   - 地图数据：
+   - 地图数据：https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
    - 需求说明：
-     - 按照设计稿实现所有的UI，地图使用Google Map
+     - 按照设计稿实现所有的UI，地图使用Google Map，测试Key请在邮件中查收
      - 地图上根据提供的地图数据，显示标记
      - 【黄标1】筛选功能，只需要实现Filters按钮的功能
      - 【黄标2】多选，点击Any 清除其它选项
