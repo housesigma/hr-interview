@@ -1,7 +1,16 @@
 # HouseSigma 前端开发面试问卷。
 
-- 对问题有不确定的地方及时发邮件 reed（at）housesigma.com，cc：yuerengui（at）housesigma.com
-- 答案发回 reed（at）housesigma.com，cc：yuerengui（at）housesigma.com
+- 在5天内尽量完成，如果时间安排有冲突，请告知完成时间
+- 可以上网查资料，问问题，问人，但必须自己动手完成
+- 测试题比实际项目代码容易很多
+- 对问题有不确定的地方及时发邮件 yuerengui（at）housesigma.com，tanwei（at）housesigma.com，reed（at）housesigma.com
+- 远程面试本身就是对远程工作能力的测试，请当成正常工作交流
+- 答案请发回： 
+```
+To: reed（at）housesigma.com
+cc: yuerengui（at）housesigma.com, tanwei（at）housesigma.com
+Subject: PHP开发面试问卷回复 （姓名，城市）
+```
 
 ---
 ### 工作时间安排
