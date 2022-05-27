@@ -84,9 +84,16 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
    1. 请使用Typescript，scss
    2. 包含状态管理、路由等基础功能
 2. 使用脚手架实现下面的页面
-   1. 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
-   2. 地图数据：
-   3. 
+   - 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
+   - 地图数据：
+   - 需求说明：
+     - 按照设计稿实现所有的UI，地图使用Google Map
+     - 地图上根据提供的地图数据，显示标记
+     - 【黄标1】筛选功能，只需要实现Filters按钮的功能
+     - 【黄标2】多选，点击Any 清除其它选项
+     - 【黄标3】单选
+     - 【黄标4】单选
+     - 筛选的值需要保存下来，刷新页面后仍可选中
 
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
 
