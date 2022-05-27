@@ -1,6 +1,7 @@
 ### 招聘流程：
 
-![image](https://user-images.githubusercontent.com/16353524/170626922-8e3c0586-ca47-4398-bbc6-fdd13c9fad5b.png)
+![image](https://user-images.githubusercontent.com/16353524/170642451-221c799e-281b-4009-98c2-1f19b11fae20.png)
+
 
 如果没有重大变化，我们就只看问卷答案。不会在语音面试前另外联络申请人。
 
