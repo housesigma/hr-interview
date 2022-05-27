@@ -82,7 +82,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 
 1. 请从0开始构建一个vue3脚手架
    1. 请使用Typescript，scss
-   2. 包含状态管理、路由等基础功能
+   2. 包含状态管理（ pinia ）、路由等基础功能
 2. 使用脚手架实现下面的页面
    - 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
    - 地图数据：https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
