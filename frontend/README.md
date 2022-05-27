@@ -53,19 +53,6 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 - 工作时有紧急业务不响应
 - 工作时不查看协作工具
 
-#### 公司业务背景：
-HouseSigma（房智汇）是面向加拿大-多伦多购房者的投资买房利器。
-- 提供过去16年的房屋成交历史和价格。
-- 多种数据图表
-- 提供买卖房经纪服务
-活动用户量，月pv 同行业排名前3（多伦多地区）。
-用户集中在加拿大英文用户，中文版流量占不到4%
-
-桌面版网站：https://housesigma.com/web/
-移动版网站：https://housesigma.com/app/    
-iOS App：https://itunes.apple.com/ca/app/housesigma-toronto-sold-price/id1255490256?mt=8    
-Android App: https://play.google.com/store/apps/details?id=com.housesigma.android&hl=en_CA    
-Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk    
 
 ---
 ### 写在最前面的问题
@@ -104,7 +91,8 @@ Android APK：https://housesigma.com/static/housesigma-2.13.0-prd.apk
 
 3.4 Typescript 有哪些高级类型？ 什么样的场景下需要用到这些高级类型？（只需挑选一两个类型进行说明）
 
-3.5 如果让你从0开始架构一个vue3项目，你会怎么选择你的技术栈，比如说，Typescript， 状态管理，路由之类，说说你的理由, 能不能基于你的选择，搭建一个helloword 脚手架（请提供示例源码）。
+3.5 如果从0开始架构一个vue3项目，你会怎么选择你的技术栈，比如，Typescript，状态管理，路由等，说说你的理由。
+能不能基于以上选择，搭建一个helloword 脚手架（请提供示例源码）。
 
 3.6 有一个项目，需要进行多端开发（桌面端、移动端），采用同一套后端API，前端决定使用vue 的情况下，如果才能最大化的做到代码复用？ 业界有没有什么成熟的方案？ 
 
