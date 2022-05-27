@@ -96,7 +96,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 【黄标3】单选
      - 【黄标4】单选
      - 点击clear按钮，清除所有选项，填充默认值
-     - 点击apply按钮，隐藏filters弹窗，并在地图页上显示一个alert,显示接收到apply事件（alert内容随意），同时将筛选用console.log打印出来。
+     - 点击apply按钮，隐藏filters弹窗，并在地图页上显示一个alert,显示接收到apply事件（alert内容随意），同时将筛选后的值用console.log打印出来。
      - 筛选的值保存状态到Pinia Store中，并同步更新到本地localstore或者indexdb作持久化存储，刷新页面后从本地存储取值填充回Pinia中，同步更新UI。
 
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
