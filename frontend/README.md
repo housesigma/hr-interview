@@ -88,6 +88,8 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
    2. 地图数据：
    3. 
 
+![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
+
 ---
 
 ### 面试问题2  - pagespeed
