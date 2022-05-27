@@ -11,6 +11,20 @@ To: reed（at）housesigma.com
 cc: yuerengui（at）housesigma.com, tanwei（at）housesigma.com
 Subject: VUE开发面试问卷回复 （姓名，城市）
 ```
+---
+#### 公司业务背景：
+HouseSigma（房智汇）是面向加拿大-多伦多购房者的投资买房利器。
+- 提供过去15年的房屋成交历史和价格。
+- 多种数据图表
+- 提供买卖房经纪服务
+活动用户量，月pv 同行业排名前3（多伦多地区）。
+用户集中在加拿大英文用户，中文版流量占不到4%
+
+桌面版网站：https://housesigma.com/web/
+移动版网站：https://housesigma.com/app/    
+iOS App：https://itunes.apple.com/ca/app/housesigma-toronto-sold-price/id1255490256?mt=8    
+Android App: https://play.google.com/store/apps/details?id=com.housesigma.android&hl=en_CA    
+Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk 
 
 ---
 ### 工作时间安排
