@@ -84,6 +84,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 1. 请从0开始构建一个vue3脚手架
    1. 请使用Typescript，scss
    2. 包含状态管理（ pinia ）、路由等基础功能
+   3. UI控件请使用纯css/scss，不引入第三方UI框架
 2. 使用脚手架实现下面的页面
    - 设计稿：https://www.figma.com/file/3iBGSHYN255KPzhU7jwHyc/Reed-interview?node-id=0%3A1
    - 地图数据：https://github.com/housesigma/hr-interview/blob/main/Android/mapdata.json
@@ -94,7 +95,9 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 【黄标2】多选，点击Any 清除其它选项
      - 【黄标3】单选
      - 【黄标4】单选
-     - 筛选的值需要保存下来，刷新页面后仍被选中
+     - 点击clear按钮，清除所有选项，填充默认值
+     - 点击apply按钮，隐藏filters弹窗，并在地图页上显示一个alert,显示接收到apply事件（alert内容随意），同时将筛选用console.log打印出来。
+     - 筛选的值保存状态到Pinia Store中，并同步更新到本地localstore或者indexdb作持久化存储，刷新页面后从本地存储取值填充回Pinia中，同步更新UI。
 
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
 
