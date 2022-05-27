@@ -2,6 +2,7 @@
     "id": "6zqW7dGN9Npy5eZE",
     "up_date": "2021-12-22",
     "price": "599000",
+    "label": "M 599K",
     "house_prop": {
       "bedroom": 1,
       "bathroom": 0,
@@ -16,6 +17,7 @@
     "id": "bqB176WevD63ZajD",
     "up_date": "2021-12-08",
     "price": "90955",
+    "label": "A 91K",
     "house_prop": {
       "bedroom": 1,
       "bathroom": 2,
@@ -30,6 +32,7 @@
     "id": "jAXw7QwVR8bYQOzg",
     "up_date": "2022-01-01",
     "price": "22800",
+    "label": "M 22K",
     "house_prop": {
       "bedroom": 3,
       "sqft": 111
@@ -43,6 +46,7 @@
     "id": "bEDRYagAB1P71VaB",
     "up_date": "2021-12-16",
     "price": "87000",
+    "label": "M 87K",
     "house_prop": {
       "bedroom": 3,
       "bathroom": 2,
