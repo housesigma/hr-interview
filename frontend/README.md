@@ -76,12 +76,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 
 
 ---
-### 面试问题2
-
-
-
----
-### 面试问题3 - Vue3 & Typescript
+### 面试问题2 - Vue3 & Typescript
 
 3.1 Vue3.0 为什么要采用 Composition Api ，它与 Vue2.x 使用的 Options Api 有什么不同？
 
@@ -91,10 +86,13 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
 
 3.4 Typescript 有哪些高级类型？ 什么样的场景下需要用到这些高级类型？（只需挑选一两个类型进行说明）
 
-3.5 如果从0开始架构一个vue3项目，你会怎么选择你的技术栈，比如，Typescript，状态管理，路由等，说说你的理由。
+3.5 如果从0开始架构一个vue3项目，你会怎么选择你的技术栈，比如，Typescript，状态管理，路由等，说说你的理由。     
 能不能基于以上选择，搭建一个helloword 脚手架（请提供示例源码）。
 
 3.6 有一个项目，需要进行多端开发（桌面端、移动端），采用同一套后端API，前端决定使用vue 的情况下，如果才能最大化的做到代码复用？ 业界有没有什么成熟的方案？ 
+
+---
+### 面试问题3
 
 
 
