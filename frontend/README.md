@@ -93,7 +93,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 【黄标2】多选，点击Any 清除其它选项
      - 【黄标3】单选
      - 【黄标4】单选
-     - 筛选的值需要保存下来，刷新页面后仍可选中
+     - 筛选的值需要保存下来，刷新页面后仍被选中
 
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
 
