@@ -12,12 +12,12 @@
 - 在5天内尽量完成，如果时间安排有冲突，请告知完成时间
 - 可以上网查资料，问问题，问人，但必须自己动手完成
 - 测试题比实际项目代码容易
-- 对问题有不确定的地方及时发邮件 yuerengui（at）housesigma.com，tanwei（at）housesigma.com，reed（at）housesigma.com
+- 对问题有不确定的地方及时发邮件 yuerengui（at）housesigma.com，tanwei（at）housesigma.com，reed（at）housesigma.com，jiangyilong（at）housesigma.com
 - 远程面试本身就是对远程工作能力的测试，请当成正常工作交流
 - 答案请发回： 
   ```
   To: reed（at）housesigma.com
-  cc: yuerengui（at）housesigma.com, tanwei（at）housesigma.com
+  cc: yuerengui（at）housesigma.com, tanwei（at）housesigma.com，jiangyilong（at）housesigma.com
   Subject: VUE开发面试问卷回复 （姓名，城市）
   ```
 
