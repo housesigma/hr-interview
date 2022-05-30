@@ -103,7 +103,6 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 点击apply按钮，隐藏filters弹窗，并在地图页上显示一个alert,显示接收到apply事件（alert内容可以简单写 “已完成过滤” 之类的就可以）。
      - 筛选的值保存状态到Pinia Store中，并同步更新到本地localstore或者indexdb作持久化存储，刷新页面后从本地存储取值填充回Pinia中，同步更新UI。
    - 
-     - 导航条上的
 ![image](https://user-images.githubusercontent.com/16353524/170638274-0007dc47-c61c-4add-b233-cdbc417b7ae4.png)
 
 ---
