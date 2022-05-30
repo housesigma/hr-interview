@@ -94,7 +94,7 @@ Android APK：https://static.housesigma.com/android_apk/housesigma-4.1.8-prd.apk
      - 按照设计稿实现所有的UI
        - 必须完成：加载地图，标记，filter 菜单
        - *可不完成：导航条，搜索框，watch按钮
-       - Filter选项 和 地图标记*不*联动。只是单纯的 UI 实现。
+       - Filter选项 和 地图标记*不必须*联动，因为字段有所缺失。只是单纯的 UI 实现就可以。
      - 地图上根据提供的地图数据，显示标记
      - 【黄标1】筛选功能，只需要实现Filters按钮的功能
      - 【黄标2】多选，点击Any 清除其它选项
