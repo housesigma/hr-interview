@@ -23,6 +23,6 @@
 答案请发回：
 ```
 To: reed（at）housesigma.com
-cc: ryan（at）housesigma.com, shuman（at）housesigma.com
+cc: ryan.gor（at）housesigma.com, shuman.ip（at）housesigma.com, career (at) housesigma.com
 Subject: HouseSigma Product Manager 中文问卷（姓名，城市）
 ```
