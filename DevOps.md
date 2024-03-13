@@ -1,5 +1,5 @@
 
-一、写一个Bash脚本，**每月的一号** 对 MongoDB 中 test.user_logs 表进行备份、清理
+一、写一个Bash脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
   - 首先备份上个月的数据，备份完成后打包成.gz文件，并传输到 **Backup [bak@bak.ipo.com]** 服务器上;
   - 备份完成后，再对30天之前的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
   - 如果备份失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
@@ -35,12 +35,11 @@ graph LR;
     Slave_02-->Slave_04;
 ```
 
-四、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，现已经排查：
+四、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，与开发一起定位问题, 现已经排查：
   - 故障发生时，服务器之间防火墙正常，服务器之间可以正常通信;
   - 应用服务查询SQL正常，同时不存在性能问题;
   - 故障频率没有发现特别规律，与服务器负载没有正相关;
   - 查看各服务的日志，只发现了错误信息，但没有发现进一步说明;
-  请根据经验，给出一排查方案与可能的方向，与开发一起定位问题
 
 ```mermaid
 graph LR;
