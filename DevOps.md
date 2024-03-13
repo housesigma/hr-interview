@@ -3,7 +3,15 @@
   - 首先备份上个月的数据，备份完成后打包成.gz文件，并传输到 **Backup [bak@bak.ipo.com]** 服务器上;
   - 备份完成后，再对30天之前的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
   - 如果备份失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
-  - 这个表每日数据量大约在 700w 条
+  - 这个表每日数据量大约在 **200w** 条, 单条数据未压缩的存储大小约 **200B**;
+
+二、根据要求提供一份Nginx配置：
+  - 域名：ipo.com, 支持https、HTTP/2
+  - 非http请求经过301重定向到https
+  - 根据UA进行判断，如果包含关键字 "Google Bot", 反向代理到 server_bot[bot.ipo.com] 去处理
+  - /api 路径增加限流设置，只允许每秒1.5个请求，超过限制的请求返回429
+  - /static 目录下是静态文件，需要做一些优化配置
+  - 其它请求指向目录 /www/ipo/, 查找顺序 index.html --> public/index.html --> /api/landing
 
 二、现有一台服务器，上面运行了3个docker容器服务，需要通过iptables进行网络配置。请给出命令：
   - 只有Docker_A 与 Docker_B 之间可以相互通信，Docker_C 不能访问其它两个容器;
