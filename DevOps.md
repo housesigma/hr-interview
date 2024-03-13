@@ -1,7 +1,7 @@
 
 一、写一个定时执行的Bash脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
   - 首先备份上个月的数据，备份完成后打包成.gz文件
-  - 备份文件传输到 **Backup [bak@bak.ipo.com]** 服务器上，账户已经配置在~/.ssh/config;
+  - 备份文件通过sfpt传输到 **Backup [bak@bak.ipo.com]** 服务器上，账户已经配置在~/.ssh/config;
   - 备份完成后，再对备份过的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
   - 如果脚本执行失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
   - 这个表每日数据量大约在 **200w** 条, 单条数据未压缩的存储大小约 **200B**;
