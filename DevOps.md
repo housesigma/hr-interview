@@ -1,5 +1,5 @@
 
-一、写一个Shell脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
+一、写一个定时执行的Bash脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
   - 首先备份上个月的数据，备份完成后打包成.gz文件，并传输到 **Backup [bak@bak.ipo.com]** 服务器上;
   - 备份完成后，再对备份过的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
   - 如果脚本执行失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
@@ -9,9 +9,10 @@
   - 域名：ipo.com, 支持https、HTTP/2
   - 非http请求经过301重定向到https
   - 根据UA进行判断，如果包含关键字 "Google Bot", 反向代理到 server_bot[bot.ipo.com] 去处理
-  - /api 路径增加限流设置，只允许每秒1.5个请求，超过限制的请求返回429
-  - /static 目录下是静态文件，需要做一些优化配置
-  - 其它请求指向目录 /www/ipo/, 查找顺序 index.html --> public/index.html --> /api/landing
+  - /api 路径的请求通过**unix sock**发送到本地 **php-fpm**，文件目录 **/www/api/**
+  - /api 路径需要增加限流设置，只允许每秒1.5个请求，超过限制的请求返回 **http code 429**
+  - /static 目录下是纯静态文件，需要做一些优化配置
+  - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/landing
 
 三、现有一台服务器，上面运行了3个docker容器服务，需要通过iptables进行网络配置。请给出命令：
   - 只有Docker_A 与 Docker_B 之间可以相互通信，Docker_C 不能访问其它两个容器;
