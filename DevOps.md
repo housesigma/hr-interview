@@ -17,7 +17,7 @@
 三、现有一台服务器，上面运行了3个docker容器服务，需要通过iptables进行网络配置。请给出命令：
   - 只有Docker_A 与 Docker_B 之间可以相互通信，Docker_C 不能访问其它两个容器;
   - 只允许内网IP为 192.168.1.1 - 192.168.1.30 的内网IP访问所有容器;
-  - Docker_A:8080 与 Docker_C:80 对外网提供服务, Docker_B:3316 不对外网提供服务;
+  - Docker_A:8080 与 Docker_C:80 通过相同端口对外网提供服务, Docker_B:3316 不对外网提供服务;
   - 所有配置需要固化，重启服务器自动生效;
 
 <img width="556" alt="09050e597247436a86ef57ca5802e5b" src="https://github.com/housesigma/hr-interview/assets/4161489/7f77ad88-406d-4e10-afe8-802cc5366f1a">
