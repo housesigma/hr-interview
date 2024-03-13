@@ -1,8 +1,8 @@
 
-一、写一个Bash脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
+一、写一个Shell脚本，**每月的一号凌晨1点** 对 MongoDB 中 test.user_logs 表进行备份、清理
   - 首先备份上个月的数据，备份完成后打包成.gz文件，并传输到 **Backup [bak@bak.ipo.com]** 服务器上;
-  - 备份完成后，再对30天之前的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
-  - 如果备份失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
+  - 备份完成后，再对备份过的数据进行清理: **create_on [2024-01-01 03:33:11]** ;
+  - 如果脚本执行失败或者异常，则调用 [https://monitor.ipo.com/webhook/mongodb ];
   - 这个表每日数据量大约在 **200w** 条, 单条数据未压缩的存储大小约 **200B**;
 
 二、根据要求提供一份Nginx配置：
