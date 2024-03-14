@@ -19,7 +19,7 @@ SELECT * FROM houses WHERE house_id = 123 and type = 'A' ORDER BY created_at DES
   - 重写上述查询，以提高其在大型数据集上的效率;
   - 考虑到数据量的增长，提出优化策略，以维持查询性能;
 
-三、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，现已经排查：
+三、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出排查方案与可能的方向，现已经排查：
   - 故障发生时，服务器之间防火墙正常，服务器之间可以正常通信;
   - 故障SQL均可以正常查询，同时不存在性能问题;
   - 故障频率没有发现特别规律，与服务器负载没有正相关;
