@@ -1,6 +1,16 @@
-> 在一周内完成，通过邮件回复即可   
+> 在一周内完成   
 > 如果有任何疑问，欢迎随时来信联系   
-> 难免谬误，敬请指正   
+> 难免谬误，敬请指正，友好交流   
+>   
+> v2渠道的候选人，直接回复到应聘邮件里面即可   
+> 其它渠道的候选人在完成后请发送到下面邮箱：   
+```
+Subject: 2024Q1 资深工程师 笔试回复 | {招聘渠道} | {姓名 所在城市}
+To: tanwei@housesigma.com
+Cc: Reed@housesigma.com
+Cc: yuerengui@housesigma.com
+Cc: steven.lo@housesigma.com
+```
 
 一、使用PHP语言, 实现一个API限流器[RateLimiter]，要求如下:
   - 限制请求对象可以是全局或者某一特定对象，比如用户ID;
