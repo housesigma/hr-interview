@@ -7,9 +7,6 @@
 ```
 Subject: 2024Q1 资深工程师 笔试回复 | {招聘渠道} | {姓名 所在城市}
 To: tanwei@housesigma.com
-Cc: Reed@housesigma.com
-Cc: yuerengui@housesigma.com
-Cc: steven.lo@housesigma.com
 ```
 
 一、使用PHP语言, 实现一个API限流器[RateLimiter]，要求如下:
