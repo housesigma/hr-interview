@@ -1,4 +1,4 @@
-# 2024Q1-2 HouseSigma 招聘 
+# 2024 HouseSigma 招聘 
 
 - 招聘贴：https://www.v2ex.com/t/1021595, https://www.v2ex.com/t/1039593#reply5
 - 运维工程师问卷：https://github.com/housesigma/hr-interview/blob/main/DevOps.md
