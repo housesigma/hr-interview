@@ -29,7 +29,7 @@
 *   前端：Vue / TypeScript / Native iOS|Android 
 *   沟通： Discord /  Zoom|腾讯会议 / ClickUp / Figma
 
-## 运维工程师（Engineer - Dev Ops） \[20 - 30k\]
+## 运维工程师（Engineer - Dev Ops） \[15 - 20k\]
 
 ####  Requirements 任职要求：
 
