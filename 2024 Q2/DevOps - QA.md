@@ -1,7 +1,5 @@
-大家好，我是房智汇（ HouseSigma Inc.）中国团队的开发工程师。  
-在3月份已经发过一次招聘，已经入职了一个运维的伙伴，也有产品经理的候选人了
-但是经过这段时间梳理团队的情况，发现还需要两名PHP开发工程师。
-由于上一个帖子已经不容易编辑了，所以我们开新贴继续招聘。
+大家好，我们是房智汇（ HouseSigma Inc.）中国团队。  
+在上半年已经发过两次次招聘，我们想再招聘一位全职运维工程师。
 
 > 附以前的招聘链接： [https://www.v2ex.com/t/1039593](https://www.v2ex.com/t/1039593) [https://v2ex.com/t/1021595](https://v2ex.com/t/1021595), [https://v2ex.com/t/945916](https://v2ex.com/t/945916) , [https://v2ex.com/t/853915](https://v2ex.com/t/853915) , [https://v2ex.com/t/827125](https://v2ex.com/t/827125) , [https://www.v2ex.com/t/744848](https://www.v2ex.com/t/744848) , [https://www.v2ex.com/t/398477](https://www.v2ex.com/t/398477) , [https://www.v2ex.com/t/539071](https://www.v2ex.com/t/539071)
 
