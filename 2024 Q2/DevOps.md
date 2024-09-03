@@ -19,10 +19,10 @@
   - /static/ 目录下是纯静态文件，需要做一些优化配置
   - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/request
 
-三、现有一台服务器，上面通过默认安装docker并运行了3个服务，现需要进行网络配置。请给出方案：
-  - 只有Docker_A 与 Docker_B 之间可以相互通信，Docker_C 不能访问其它两个容器;
+三、现有一台服务器，上面通过默认安装docker并运行了3个Container，现需要进行网络配置。请给出方案：
+  - 只有Container_A 与 Container_B 之间可以相互通信，Container_C 不能访问其它两个容器;
   - 只允许内网IP为 192.168.1.1 - 192.168.1.30 的内网IP访问所有容器;
-  - Docker_A:8080 与 Docker_C:80 通过与自身相同端口对外网提供服务, Docker_B:3316 不对外网提供服务;
+  - Container_A:8080 与 Container_C:80 通过与自身相同端口对外网提供服务, Container_B:3316 不对外网提供服务;
   - 所有配置需要固化，重启服务器自动生效;
 
 <img width="556" alt="09050e597247436a86ef57ca5802e5b" src="https://github.com/housesigma/hr-interview/assets/4161489/7f77ad88-406d-4e10-afe8-802cc5366f1a">
