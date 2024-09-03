@@ -17,7 +17,7 @@
   - /api/{name} 路径的请求通过**unix sock**发送到本地 **php-fpm**，文件映射 **/www/api/{name}.php** 
   - /api/{name} 路径下需要增加限流设置，只允许每秒1.5个请求，超过限制的请求返回 **http code 429**
   - /static/ 目录下是纯静态文件，需要做一些优化配置
-  - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/landing
+  - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/request
 
 三、现有一台服务器，上面通过默认安装并运行了3个docker容器服务，需要通过iptables进行网络配置。请给出命令：
   - 只有Docker_A 与 Docker_B 之间可以相互通信，Docker_C 不能访问其它两个容器;
