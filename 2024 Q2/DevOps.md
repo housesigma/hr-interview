@@ -19,20 +19,10 @@
   - /static/ 目录下是纯静态文件，需要做一些优化配置
   - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/request
 
-三、现有一台服务器，上面通过默认安装docker并运行了3个Container，现需要进行网络配置。请给出方案：
-  - 只有Container_A 与 Container_B 之间可以相互通信，Container_C 不能访问其它两个容器;
-  - 只允许内网IP为 192.168.1.1 - 192.168.1.30 的内网IP访问所有容器;
-  - Container_A:8080 与 Container_C:80 通过与自身相同端口对外网提供服务, Container_B:3316 不对外网提供服务;
-  - 所有配置需要固化，重启服务器自动生效;
-
-<img width="556" alt="09050e597247436a86ef57ca5802e5b" src="https://github.com/housesigma/hr-interview/assets/4161489/7f77ad88-406d-4e10-afe8-802cc5366f1a">
-
-四、有一个简单的三层 Web 应用，包含前端（frontend）、中间层（backend），和数据库（database）三部分。这些应用都已经打包成 Docker 镜像，现在需要部署在 Kubernetes 中。
-
+三、有一个简单的三层 Web 应用，包含前端（frontend）、中间层（backend），和数据库（database）三部分。这些应用都已经打包成 Docker 镜像，现在需要部署在 Kubernetes 中。
 该集群是一个全新部署的集群，除了 kube-proxy, CoreDNS, CNI (Calico) 外没有部署任何应用，你需要提供部署所需的所有 yaml 定义及部署说明，可以使用 helm 等工具
 
 具体要求如下：
-
 
 1.	前端服务（frontend）：
 - 需要通过外部访问，并且暴露在一个特定的域名 frontend.example.com 上并且需要支持 https 访问(可以 self-signed)。
@@ -51,7 +41,7 @@
 - 需要考虑持久化问题，数据存储在 /var/lib/mysql 目录下, 需要确保 Pod 崩溃或重建后数据不丢失。
 
 
-五、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，与开发一起定位问题, 现已经排查：
+四、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，与开发一起定位问题, 现已经排查：
   - 故障发生时，服务器之间防火墙正常，服务器之间可以正常通信;
   - 故障SQL均可以正常查询，同时不存在性能问题;
   - 故障频率没有发现特别规律，与服务器负载没有正相关;
