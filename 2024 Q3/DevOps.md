@@ -46,7 +46,7 @@ graph LR;
 
     2. 中间层服务（backend）：
     - 仅供前端服务调用，不能对外部暴露
-    - 支持通过环境变量来配置对 database 的访问，ENV KEY: DB_HOST/DB_NAME/DB_USER/DB_PASS
+    - 支持通过环境变量来配置对 database 的访问，ENV KEY: DB_HOST/DB_NAME/DB_USER/DB_PASS...
     - 为了保证高可用性，至少要有 3个Pod 同时存活，同时需要 **尽可能** 避免多个 Pod 运行在同一个 Node 上
 
     3. 数据库服务（database）：
