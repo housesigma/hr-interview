@@ -1,5 +1,5 @@
-> 在一周内完成，通过邮件回复即可  
-> 难免谬误，敬请指正  
+> 在一周内完成，通过邮件回复即可
+> 请尽量作答，难免谬误，敬请指正  
 > 如果有任何疑问，欢迎随时来信联系    
 
 
@@ -16,32 +16,10 @@
   - 根据UA进行判断，如果包含关键字 **"Google Bot"**, 反向代理到 server_bot[bot.ipo.com] 去处理
   - /api/{name} 路径的请求通过**unix sock**发送到本地 **php-fpm**，文件映射 **/www/api/{name}.php** 
   - /api/{name} 路径下需要增加限流设置，只允许每秒1.5个请求，超过限制的请求返回 **http code 429**
-  - /static/ 目录下是纯静态文件，需要做一些优化配置
+  - /static/ 目录下是纯静态文件
   - 其它请求指向目录 **/www/ipo/**, 查找顺序 index.html --> public/index.html --> /api/request
 
-三、有一个简单的三层 Web 应用，包含前端（frontend）、中间层（backend），和数据库（database）三部分。这些应用都已经打包成 Docker 镜像，现在需要部署在 Kubernetes 中。
-该集群是一个全新部署的集群，除了 kube-proxy, CoreDNS, CNI (Calico) 外没有部署任何应用，你需要提供部署所需的所有 yaml 定义及部署说明，可以使用 helm 等工具
-
-具体要求如下：
-
-1.	前端服务（frontend）：
-- 需要通过外部访问，并且暴露在一个特定的域名 frontend.example.com 上并且需要支持 https 访问(可以 self-signed)。
-- 应用需要自动扩缩容，根据 CPU (80%)使用率在 2 到 10 个 Pod 之间调整实例数量。
-- 该 Pod 需要配置 health check, HTTP 协议 9090 端口
-
-
-2.	中间层服务（backend）：
-- 仅供前端服务调用，不需要对外部暴露。
- - 需要通过环境变量配置对 database 的访问信息，KEY: DB_HOST/DB_NAME/DB_USER/DB_PASS
-- 为了保证高可用性，至少要有 3 个 Pod 在任意时刻运行，同时需要 **尽可能** 避免 Pod 运行在同一台 Node 上。
-
-
-3.	数据库服务（database）：
-- 数据库只允许中间层服务访问，不能通过 ClusterIP 之外的方式暴露。
-- 需要考虑持久化问题，数据存储在 /var/lib/mysql 目录下, 需要确保 Pod 崩溃或重建后数据不丢失。
-
-
-四、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，与开发一起定位问题, 现已经排查：
+三、在生产环境中，应用程序是通过Haproxy来读取Slave集群，但是偶尔会产生 **SQLSTATE[HY000]: General error: 2006 MySQL server has gone away** 的错误，请根据经验，给出一排查方案与可能的方向，与开发一起定位问题, 现已经排查：
   - 故障发生时，服务器之间防火墙正常，服务器之间可以正常通信;
   - 故障SQL均可以正常查询，同时不存在性能问题;
   - 故障频率没有发现特别规律，与服务器负载没有正相关;
@@ -56,3 +34,21 @@ graph LR;
     Haproxy-->Slave_04;
 ```
 
+四、有一个简单的三层 Web 应用，包含前端（frontend）、中间层（backend），和数据库（database）三部分。这些应用都已经打包成 Docker 镜像，现在需要部署在 Kubernetes 中。
+该集群是一个全新部署的集群，除了 kube-proxy, CoreDNS, CNI (Calico) 外没有部署任何应用。请根据下面的要求分别提供部署所需的所有 yaml 定义及部署说明，可以使用 helm 等工具。
+
+具体要求如下：
+
+> 1.	前端服务（frontend）：
+> - 需要通过外部域名：frontend.example.com访问并支持 https，可以self-signed
+> - 支持自动扩缩容，根据 CPU (80%) 使用率在 2 到 10 个 Pod 之间调整实例数量
+> - 该 Pod 需要配置 health check, HTTP 协议 9090 端口
+
+> 2.	中间层服务（backend）：
+> - 仅供前端服务调用，不能对外部暴露
+> - 支持通过环境变量来配置对 database 的访问，ENV KEY: DB_HOST/DB_NAME/DB_USER/DB_PASS
+> - 为了保证高可用性，至少要有 3个Pod 同时存活，同时需要 **尽可能** 避免多个 Pod 运行在同一个 Node 上
+
+> 3.	数据库服务（database）：
+> - 数据库只允许中间层服务访问，不能通过 ClusterIP 之外的方式暴露
+> - 需要考虑持久化问题，数据存储在 /var/lib/mysql 目录下, 确保 Pod 崩溃或重建后数据不丢失
