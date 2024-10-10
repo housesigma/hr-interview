@@ -14,7 +14,7 @@ To: hr-china@housesigma.com
   - 默认使用redis作为存储系统，并支持扩展为其它存储系统;
   - 交付内容需要包括该类库的用法文档和结构设计图;
 
-三、通过数据库的慢日志，我们发现了一个慢请求，原始SQL和Explain分析结果如下
+三、通过数据库的慢日志，我们发现了一个慢请求[执行时间 > 1s]，原始SQL和Explain分析结果如下
 ```
 SELECT 
     filed_a
@@ -34,7 +34,8 @@ WHERE
 | 1   | SIMPLE      | table_l |            | range  | PRIMARY,flag,date_end,type,flag_type_date | flag_type_date | 40      |            | 61708 | 33.33    | Using where; Using index |
 | 1   | SIMPLE      | table_d |            | eq_ref | PRIMARY,id_m                              | PRIMARY        | 4       | table_l.id | 1     | 5.00     | Using where              |
 
-`其中 flag_type_date 为组合索引  KEY flag_type_date (flag,type,date_end,date_start)`
+- table_l是主表、table_d是副表，总数据量接近1KW
+- 其中 flag_type_date 为组合索引  KEY flag_type_date (flag,type,date_end,date_start)
 - 请根据上述信息，给出可能的优化办法并说明原因 
 
 
