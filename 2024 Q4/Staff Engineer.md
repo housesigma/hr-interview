@@ -21,7 +21,7 @@ SELECT
 FROM table_l 
 JOIN table_d on table_l.id = table_d.id
 WHERE
-    table_l.date_end >= DATE('2019-07-01' )
+    table_l.date_end >= DATE('2019-07-01')
     AND table_l.date_end < (DATE('2019-07-01') + INTERVAL 1 month)
     AND table_l.date_end >= table_l.date_start
     AND table_l.flag = 1
@@ -36,6 +36,7 @@ WHERE
 
 - table_l是主表、table_d是副表，总数据量接近1KW
 - 其中 flag_type_date 为组合索引  KEY flag_type_date (flag,type,date_end,date_start)
+- DATE('2019-07-01')、flag = 1、'S'、1234 这几个参数值都会根据场景而不同
 - 请根据上述信息，给出可能的优化办法并说明原因 
 
 
