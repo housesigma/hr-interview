@@ -13,7 +13,7 @@ To: hr-china@housesigma.com
   - 可以根据屏幕大小进行自适应缩放，以保证图片不会超出屏幕
   - 请尽可能多的写出不同的CSS实现，并说明优缺点
 
-二、对前端页面[https://www.realtor.ca/map]进行分析
+二、对前端页面 [https://www.realtor.ca/map] 进行分析
   - 报告格式与内容可以根据自己的习惯进行梳理
   - 请根据报告提出合理的优化建议与开发优先级
 
