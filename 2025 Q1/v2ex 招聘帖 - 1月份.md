@@ -33,6 +33,8 @@
 - 前端：Vue / TypeScript / Native iOS|Android
 - 沟通：Discord / Zoom|腾讯会议|Lark / ClickUp / Figma
 
+---
+
 ## 资深工程师（ Staff Engineer/Tech Lead ） [20K - 面议]
 
 #### 任职要求：
