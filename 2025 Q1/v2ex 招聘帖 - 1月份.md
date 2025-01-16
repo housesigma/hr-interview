@@ -1,8 +1,8 @@
 
-# [全职远程] 资深前后端工程师 [20K - 面议] 、开发工程师[15k - 20k]
+# [全职远程] 资深工程师 [20K+] 、开发工程师[15k+]
 
 大家好，我们是房智汇（ HouseSigma Inc.）中国团队。  
-我们正在寻找合适的资深前后端工程师 (Staff Engineer/Tech Lead) 和开发工程师 (Development Engineer) 
+我们正在寻找合适的 资深工程师 (Staff Engineer/Tech Lead) 、研发工程师 (Engineer - Development) 、工程经理（Engineering Manager）
 
 > 附以前的招聘链接：[https://www.v2ex.com/t/1091416](https://www.v2ex.com/t/1091416),[https://www.v2ex.com/t/1071440](https://www.v2ex.com/t/1071440), [https://www.v2ex.com/t/1039593](https://www.v2ex.com/t/1039593) [https://v2ex.com/t/1021595](https://v2ex.com/t/1021595), [https://v2ex.com/t/945916](https://v2ex.com/t/945916) , [https://v2ex.com/t/853915](https://v2ex.com/t/853915) , [https://v2ex.com/t/827125](https://v2ex.com/t/827125) , [https://www.v2ex.com/t/744848](https://www.v2ex.com/t/744848) , [https://www.v2ex.com/t/398477](https://www.v2ex.com/t/398477) , [https://www.v2ex.com/t/539071](https://www.v2ex.com/t/539071)
 
@@ -32,9 +32,9 @@
 - 系统：Centos 8 / Rocky 8 / AWS
 - 服务：Mysql / Mongo / Redis / ES / Kafka / K8S
 - 前端：Vue / TypeScript / Native iOS|Android
-- 沟通：Discord / Zoom|腾讯会议 / ClickUp / Figma
+- 沟通：Discord / Zoom|腾讯会议|Lark / ClickUp / Figma
 
-## 资深前后端工程师（ Staff Engineer/Tech Lead ） [20K - 面议]
+## 资深工程师（ Staff Engineer/Tech Lead ） [20K - 面议]
 
 #### 任职要求：
 
@@ -44,10 +44,11 @@
 - 思维逻辑清晰，具备良好的沟通能力
 - 热爱技术，有探究精神，愿意学习使用新技术
 
-##### 加分项
+**补充**
 
-- 面向 C 端项目主程、架构经验
-- 丰富的团队管理经验
+- 加分：中大型项目主程经验
+- 加分：丰富的项目管理经验
+- 前后端不限
 
 #### 工作职责：
 
@@ -69,9 +70,9 @@
 - 思维逻辑清晰，具备良好的沟通能力；
 - 热爱技术，有探究精神，愿意学习使用新技术；
 
-**加分项**
+**补充**
 
-- 做过 C 端项目，并维护开发一年以上
+- 偏向后端，工作经验不限
 
 #### 工作职责：
 
@@ -85,10 +86,11 @@
 
 #### 招聘流程：
 
-- 面试：根据简历内容我们会主观的选择一些候选人，发送面试邀请，通过20分钟的简单交流互相了解，通过后会发送笔试链接
-- 笔试：一份远程笔试问卷，需要你在 1 周内完成并反馈回来
-- 一轮技术面试：会根据简历和问卷内容，进行第一次交流
-- 二轮技术面试：与技术总监进行一次面谈，决定最终的结果
+- 简历筛选：根据简历内容我们会主观的选择一些候选人，发送初步面试邀请
+- 初步面试：15-20分钟的快速沟通，双方做快速了解
+- 一轮技术面试：
+- 二轮技术面试：与技术总监进行一次沟通
+- 三轮面试（可能）：与CTO进行一次沟通
 
 > 我们是个 100% 远程团队，面试从投简历的一刻就已经开始了。请尽量保持文字格式工整，因为每份简历和问卷我们都会认真阅读，希望大家理解。本次招聘过程可能会持续 1-2 个月，进度会持续在此更新，直至完成。以往的招聘我们都尽量回复了每一位候选者，但是难免有疏漏，放心来信催问
 
